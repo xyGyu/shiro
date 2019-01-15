@@ -25,7 +25,7 @@ public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired
     private UserDao userService;
-    
+
     @Autowired
     private PermissionDao permissionService;
 
