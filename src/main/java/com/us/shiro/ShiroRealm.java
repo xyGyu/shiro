@@ -25,8 +25,10 @@ public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired
     private UserDao userService;
+    
     @Autowired
     private PermissionDao permissionService;
+
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         logger.info("doGetAuthorizationInfo+"+principalCollection.toString());
