@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html layout:decorator="fragments/layout" th:with="index='setting',son='setting.admin'"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.thymeleaf.org/" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>系统基本设置</title>
+    <style>
+    </style>
+</head>
+<body>
+<div layout:fragment="modal">
+</div>
+<div layout:fragment="content">
+    <section class="content">
+        <div class="box box-half">
+            <div class="box-header with-border">
+                <h3 class="box-title">系统基础设置</h3>
+            </div>
+            <form id="admin-setting-form">
+                <div class="box-body">
+                    <div class="form-horizontal">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">系统简称</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="c-name" name="name"
+                                           th:value="${setting.name}"
+                                           placeholder="请输入系统名称"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">系统全称
+                                    <i class="fa fa-question-circle " data-toggle="tooltip" data-placement="top"
+                                       title=""
+                                       data-original-title="显示在登录页面"></i>
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="c-full-name" name="fullName"
+                                           th:value="${setting.fullName}"
+                                           placeholder="请输入系统全称"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button id="admin-setting-submit" class="btn btn-primary pull-right">保存</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<div layout:fragment="js">
+    <script th:inline="javascript">
+        $('#admin-setting-submit').on('click', function (e) {
+            e.preventDefault();
+            url = "/settings/admin";
+            $btn = $(this);
+            $btn.button("loading");
+            $('#admin-setting-form').ajaxSubmit({
+                url: url,
+                type: 'POST',
+                dataType: "json",
+                clearForm: false,
+                success: function (data, status) {
+                    if (data.code == '200') {
+                        toastr.success(" 保存成功");
+                    } else {
+                        toastr.error("errorcode:" + data.code + ",errormsg:" + data.msg);
+                    }
+                    $btn.button('reset');
+                }, error: function (res) {
+                    $btn.button('reset');
+                    if (res.status == 401) {
+                        toastr.error("该操作不被允许");
+                    } else {
+                        toastr.error("系统错误,请联系管理员");
+                    }
+                }
+            });
+        })
+    </script>
+</div>
+</body>
+</html>
