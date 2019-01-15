@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48cbfe9-554e-4a15-8ee0-4ac19f8be0b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/us/shiro/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/us/shiro/ShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/epp-manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/epp-manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/us/shiro/ShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/us/shiro/ShiroRealm.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +35,9 @@
           <entry key="class" value="15" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="7" />
-          <entry key="java" value="25" />
-          <entry key="js" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="26" />
+          <entry key="js" value="2" />
           <entry key="properties" value="2" />
           <entry key="xml" value="4" />
         </counts>
@@ -44,8 +47,9 @@
           <entry key="CLASS" value="15" />
           <entry key="Git file" value="2" />
           <entry key="HTML" value="7" />
-          <entry key="JAVA" value="25" />
-          <entry key="JavaScript" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="26" />
+          <entry key="JavaScript" value="2" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="4" />
         </counts>
@@ -53,15 +57,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="10" />
-          <entry key="java" value="208" />
+          <entry key="java" value="210" />
           <entry key="properties" value="17" />
+          <entry key="txt" value="1" />
           <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="10" />
-          <entry key="JAVA" value="208" />
+          <entry key="JAVA" value="210" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="17" />
           <entry key="XML" value="18" />
         </counts>
@@ -75,13 +81,39 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/us/shiro/ShiroRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/pace/pace.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/us/controller/PortalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -120,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/404.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/403.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/us/controller/PortalController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/us/shiro/ShiroRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/us/controller/PortalController.java" />
       </list>
     </option>
   </component>
@@ -196,6 +228,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="us" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-shiro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="us" type="462c0819:PsiDirectoryNode" />
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,7 +252,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,7 +272,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547535852543" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547536760842" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,21 +373,29 @@
       <workItem from="1547534728982" duration="199000" />
       <workItem from="1547535014165" duration="76000" />
       <workItem from="1547535163407" duration="37000" />
-      <workItem from="1547535301103" duration="550000" />
+      <workItem from="1547535301103" duration="1457000" />
     </task>
+    <task id="LOCAL-00001" summary="是">
+      <created>1547536038107</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547536038107</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21053000" />
+    <option name="totallyTimeSpent" value="21960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1420" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49183673" visible="true" weight="0.25726745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49186993" visible="true" weight="0.25726745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.5081633" side_tool="true" visible="true" weight="0.25726745" />
+      <window_info id="JRebel" order="3" sideWeight="0.5081301" side_tool="true" visible="true" weight="0.25726745" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -359,14 +409,14 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32784638" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49927327" weight="0.32784638" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50145346" side_tool="true" weight="0.3251029" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49927327" weight="0.32921812" />
       <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.5007163" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.49928367" weight="0.3251029" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.4985465" visible="true" weight="0.3251029" />
       <window_info anchor="bottom" id="Alipay DevTools" order="16" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.32784638" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -385,8 +435,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="是" />
+    <option name="LAST_COMMIT_MESSAGE" value="是" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -483,7 +547,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/dao/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/service/UserService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/pace/pace.min.js" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/com/sun/org/apache/xerces/internal/util/ErrorHandlerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -504,7 +567,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/config/MapperScannerConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/config/MyBatisConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/controller/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/us/controller/PortalController.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -529,10 +591,30 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDaoMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/shiro.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/us/shiro/ShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="280">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/pace/pace.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/us/controller/PortalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
