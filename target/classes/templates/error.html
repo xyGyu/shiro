@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>500错误</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <section class="content">
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-sm-1 text-center">
+                &nbsp;
+            </div>
+            <div class="col-sm-6 text-center">
+                <img src="https://gw.alipayobjects.com/zos/rmsportal/RVRUAYdCGeYNBWoKiIwB.svg"/>
+            </div>
+            <div class="col-sm-5" style="margin-top: -30px;">
+                <div class=""><h1 style="font-size: 80px;">500</h1>
+                    <p class="">抱歉，服务器出错了</p>
+                    <div class="actions___2I7s9">
+                        <a th:href="@{~/}">
+                            <button type="button" class="btn btn-primary"><span>返回首页</span></button>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
