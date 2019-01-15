@@ -27,9 +27,22 @@ public class PortalController {
         return "403";
     }
 
+    /**
+     * 用户登陆
+     * @return
+     */
     @RequestMapping(value = "/login")
     public String login() {
         return "login";
+    }
+
+    /**
+     * 用户登陆
+     * @return
+     */
+    @RequestMapping(value = "/index")
+    public String index() {
+        return "index";
     }
 
 }

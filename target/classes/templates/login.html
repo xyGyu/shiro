@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>系统登录</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -24,10 +24,10 @@
         <div class="loginbox-title" style="padding-top: 20px;margin-bottom: 20px">登录</div>
         <form id="loginForm" action="/admin/login" method="post">
             <div class="loginbox-textbox">
-                <input id="username" name="username" type="text" class="form-control" placeholder="管理账号">
+                <input id="username" name="username" type="text" class="form-control" placeholder="管理账号"/>
             </div>
             <div class="loginbox-textbox">
-                <input id="userpass" name="userpass" type="password" class="form-control" placeholder="密码">
+                <input id="userpass" name="userpass" type="password" class="form-control" placeholder="密码"/>
             </div>
             <!--<div class="loginbox-textbox">-->
             <!--<input id="verify" type="text" name="verify" class="form-control" placeholder="验证码">-->
@@ -36,7 +36,7 @@
             <!--<img src="/wfx/Admin/Public/verify" width="100%" id="verifyimg">-->
             <!--</div>-->
             <div class="loginbox-submit">
-                <input class="btn btn-primary btn-block" value="登录" onclick="login()" type="button">
+                <input class="btn btn-primary btn-block" value="登录" onclick="login()" type="button"/>
             </div>
         </form>
     </div>
@@ -67,18 +67,19 @@
             data: {
                 "username": username,
                 "password": password,
-                "isRemember": 1
+                "rememberMe": 1
             },
             success: function (data) {
+                debugger
                 if (data.code == 200) {
-                    location.href = "/";
+                    location.href = "/index";
                 } else {
                     toastr.error(data.msg);
                 }
             },
             error: function (xhr, status, error) {
                 var err = eval("(" + xhr.responseText + ")");
-                toastr.error(err.msg);
+                toastr.error("蛇皮怪");
             }
         });
     }
