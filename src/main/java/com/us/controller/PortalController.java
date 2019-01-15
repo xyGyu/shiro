@@ -45,4 +45,13 @@ public class PortalController {
         return "index";
     }
 
+    /**
+     * 异常连接都返回到index
+     * @return
+     */
+    @RequestMapping(value = "/")
+    public String indexw() {
+        return "index";
+    }
+
 }
