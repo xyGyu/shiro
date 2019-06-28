@@ -101,10 +101,16 @@ public class ShiroConfiguration {
         filterChainDefinitionManager.put("/logout", "logout");
         filterChainDefinitionManager.put("/user/**", "authc,roles[ROLE_USER]");
         filterChainDefinitionManager.put("/events/**", "authc,roles[ROLE_ADMIN]");
+<<<<<<< HEAD
         filterChainDefinitionManager.put("/img/**","anon");
         //配置不会被拦截的连接（css，js，等）
         filterChainDefinitionManager.put("/css/**","anon");
 
+=======
+        //配置不会被拦截的连接（css，js，等）有时候会炸
+        filterChainDefinitionManager.put("/img/**","anon");
+        filterChainDefinitionManager.put("/css/**","anon");
+>>>>>>> 9de654319bdb7826a6d4cc4388a552314673dd61
         filterChainDefinitionManager.put("/js/**","anon");
 
         filterChainDefinitionManager.put("/admins/login","anon");
