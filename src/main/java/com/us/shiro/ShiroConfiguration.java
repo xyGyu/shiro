@@ -93,19 +93,18 @@ public class ShiroConfiguration {
 
         Map<String, Filter> filters = new LinkedHashMap<String, Filter>();
         LogoutFilter logoutFilter = new LogoutFilter();
+        //设置登陆时候的页面
         logoutFilter.setRedirectUrl("/login");
-//        filters.put("logout",null);
         shiroFilterFactoryBean.setFilters(filters);
 
         Map<String, String> filterChainDefinitionManager = new LinkedHashMap<String, String>();
         filterChainDefinitionManager.put("/logout", "logout");
         filterChainDefinitionManager.put("/user/**", "authc,roles[ROLE_USER]");
         filterChainDefinitionManager.put("/events/**", "authc,roles[ROLE_ADMIN]");
-        filterChainDefinitionManager.put("img/**","anon");
+        filterChainDefinitionManager.put("/img/**","anon");
         //配置不会被拦截的连接（css，js，等）
         filterChainDefinitionManager.put("/css/**","anon");
 
-      //  filterChainDefinitionManager.put("img/**","anon");
         filterChainDefinitionManager.put("/js/**","anon");
 
         filterChainDefinitionManager.put("/admins/login","anon");
